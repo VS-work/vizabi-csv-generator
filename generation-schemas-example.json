@@ -1,0 +1,18 @@
+[
+  {
+    "file": "dont-panic-poverty-geo-properties.csv",
+    "endpoint": "geos"
+  },
+  {
+    "file": "dont-panic-poverty.csv",
+    "endpoint": "measureValues",
+    "query": "select=geo,time,pop,geo.lat,geo.lng"
+  },
+  {
+    "file": "dont-panic-poverty-2000.csv",
+    "endpoint": "measureValues",
+    "query": "select=geo,time,pop,geo.lat,geo.lng&time=2000"
+  }
+]
+
+

@@ -9,9 +9,6 @@ Where `generation-schemas.json` is the file that contains schemas for CSVs to be
  [
    {
      "file": "geos.csv",
-   },
-   {
-     "file": "geos.csv",
      "endpoint": "geos"
    },
    {

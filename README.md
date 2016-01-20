@@ -9,12 +9,13 @@ Where `generation-schemas.json` is the file that contains schemas for CSVs to be
  [
    {
      "file": "geos.csv",
-     "endpoint": "geos"
+     "endpoint": "geos",
+     "query": "select=geo,geo.name,geo.cat,geo.region,geo.latitude,geo.longitude&format=csv"
    },
    {
      "file": "measureValues.csv",
      "endpoint": "measureValues",
-     "query": "time=2015"
+     "query": "select=geo,time,population,gdp_p_cap_const_ppp2011_dollar,gini,child_mortality_rate_per1000&time=2015&format=csv"
    }
  ]
  ```

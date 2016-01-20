@@ -53,13 +53,13 @@ Where `generation-schemas.json` is the file that contains schemas for CSVs to be
  WS_URL=http://localhost:3000 node index
  ```
 
-  ## Options
+## Options
  - `file` - the name of the generated csv file
  - `endpoint (optional)` - predefined value inside of the generation script that knows which route to invoke in order to get the data. If skipped default route will be used: `/api/graphs/stats/vizabi-tools`
  - `query (optional)` - url params that will be used during the route invocation. Should be supplied in form of `key=value&key=value...`
 
- ## Possible issues:
- If something is generated not the way you expected - the issue might be:
-  1. obsolete data
-  2. outdated version of waffle-server
-  3. generator by itsef has a bug
+## Possible issues:
+If something is generated not the way you expected - the issue might be:
+ 1. obsolete data
+ 2. outdated version of waffle-server
+ 3. generator by itsef has a bug

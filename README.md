@@ -60,6 +60,6 @@ Where `generation-schemas.json` is the file that contains schemas for CSVs to be
 
  ## Possible issues:
  If something is generated not the way you expected - the issue might be:
-   1. obsolete data
-   2. outdated version of waffle-server
-   3. generator by itsef has a bug
+  1. obsolete data
+  2. outdated version of waffle-server
+  3. generator by itsef has a bug

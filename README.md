@@ -58,7 +58,7 @@ Where `generation-schemas.json` is the file that contains schemas for CSVs to be
 
 # Metadata generator usage
 
-In order to generate metadata.json you should invoke following command:
+In order to generate `metadata.json` you should invoke following command:
 
 ```
 node metadata-generator
@@ -80,6 +80,8 @@ In order to override default `WS_URL` you should invoke metadata generator as fo
 ```
 WS_URL=http://waffle-server-stage.gapminderdev.org node metadata-generator
 ```
+
+Invocation of `npm start` will generate metadata.json as well (using dev instance), apart from csv files.
 
 # Possible issues:
 If something is generated not the way you expected - the issue might be:

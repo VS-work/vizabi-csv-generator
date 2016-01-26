@@ -28,17 +28,17 @@ Where `generation-schemas.json` is the file that contains schemas for CSVs to be
 
  In order to generate vizabi csv files for **waffle-server-dev** do following (does the same as `node csv-generator`):
  ```
- npm run generate-from-dev
+ npm run generate-csv-from-dev
  ```
 
  In order to generate vizabi csv files for **waffle-server-stage** do following:
  ```
- npm run generate-from-stage
+ npm run generate-csv-from-stage
  ```
 
- In order to generate vizabi csv files for **waffle-server-dev** do following:
+ In order to generate vizabi csv files for **waffle-server-prod** do following:
  ```
- npm run generate-from-prod
+ npm run generate-csv-from-prod
  ```
 
  This command will install all dependencies and generate vizabi csv files for **waffle-server-dev**:
@@ -64,12 +64,21 @@ In order to generate metadata.json you should invoke following command:
 node metadata-generator
 ```
 
-And it will produce metadata.json based on the data grabed from the given WS mongo instance (default `mongodb://localhost:27017/ws_test`)
+And it will produce `metadata.json` based on the data grabed from the given WS instance(default `http://waffle-server-dev.gapminderdev.org`)
+The equivalent command to the one above is `npm run generate-meta-from-dev`
 
-In order to override default mongo url you should invoke metadata generator as follows:
+Available commands for metadata generation:
+```
+npm run generate-meta-from-dev
+npm run generate-meta-from-stage
+npm run generate-meta-from-prod
+```
+
+
+In order to override default `WS_URL` you should invoke metadata generator as follows:
 
 ```
-MONGO_URL=mongodb://petite-rabbit:27017/ws_mongo_db_name node metadata-generator
+WS_URL=http://waffle-server-stage.gapminderdev.org node metadata-generator
 ```
 
 # Possible issues:

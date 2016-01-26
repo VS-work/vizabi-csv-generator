@@ -1,12 +1,12 @@
 {
-  "name": "vizabi-csv-generator",
+  "name": "vizabi-working-files-generator",
   "version": "1.0.0",
-  "description": "Tool for generation vizabi CSV files based on waffle-server data",
+  "description": "Tool for generation vizabi CSV and metadata files based on waffle-server data",
   "main": "index.js",
   "scripts": {
-    "generate-from-stage": "cross-env WS_URL=http://waffle-server-stage.gapminderdev.org node index",
-    "generate-from-dev": "cross-env WS_URL=http://waffle-server-dev.gapminderdev.org node index",
-    "generate-from-prod": "cross-env WS_URL=http://waffle-server.gapminderdev.org node index",
+    "generate-from-stage": "cross-env WS_URL=http://waffle-server-stage.gapminderdev.org node csv-generator",
+    "generate-from-dev": "cross-env WS_URL=http://waffle-server-dev.gapminderdev.org node csv-generator",
+    "generate-from-prod": "cross-env WS_URL=http://waffle-server.gapminderdev.org node csv-generator",
     "start": "npm i && npm run generate-from-dev"
   },
   "author": "Georgii Rychko <georgii.rychko@valor-software.com>",
@@ -14,7 +14,9 @@
   "dependencies": {
     "async": "1.5.0",
     "cross-env": "1.0.7",
+    "kerberos": "0.0.18",
     "lodash": "3.10.1",
+    "mongodb": "2.1.4",
     "request": "2.67.0"
   }
 }

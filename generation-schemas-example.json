@@ -15,5 +15,3 @@
     "query": "geo.cat=country&time=2000&select=geo,time,population,gdp_p_cap_const_ppp2011_dollar,gini,child_mortality_rate_per1000&sort=time:asc,geo:asc&format=csv"
   }
 ]
-
-
